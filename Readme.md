@@ -1,6 +1,8 @@
 # GridView for WebForms - How to change the "Equals to Null" condition to "Equals to Null or Empty" in the GridView filter expression
 
-<p>GridView FilterBuilder offers the Equals operator. When an end-user selects this operator for the string column and assigns nothing to the right operand, only values that are equal to null are displayed. If you need to display values that are equal to null or empty string, you can handle the <a href="https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.SubstituteFilter">ASPxGridView.SubstitureFilter</a> event and change the "Equals to Null" condition to the "Equals to Null or Empty" condition. In the SubstitureFilter event handler, you need to use the CriteriaColumnAffinityResolver.SplitByColumns method to parse the Filter value. After this, find all BinaryOperators whose type is Equal and the right operand value is null. Then, for these operators, add an additional binary operator with an empty string.</p>
+<p>GridView FilterBuilder offers the Equals operator. When an end-user selects this operator for the string column and assigns nothing to the right operand, only values that are equal to null are displayed. </p> 
+<p>If you need to display values that are equal to null or empty string, you can handle the <a href="https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.SubstituteFilter">ASPxGridView.SubstitureFilter</a> event and change the "Equals to Null" condition to the "Equals to Null or Empty" condition. </p>
+<p>In the SubstitureFilter event handler, you need to use the CriteriaColumnAffinityResolver.SplitByColumns method to parse the Filter value. After this, find all BinaryOperators whose type is Equal and the right operand value is null. Then, for these operators, add an additional binary operator with an empty string.</p>
 
 ```cs
 using DevExpress.Data.Filtering;
@@ -30,7 +32,7 @@ In the sample, the Title filed contains null and string.Empty values. Both value
 
 <br/>
 <!-- default file list -->
-*Files to look at*:
+Files to look at:
 
 * [Default.aspx](./CS/SubstituteFilterUsing/Default.aspx) (VB: [Default.aspx](./VB/SubstituteFilterUsing/Default.aspx))
 * [Default.aspx.cs](./CS/SubstituteFilterUsing/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/SubstituteFilterUsing/Default.aspx.vb))
