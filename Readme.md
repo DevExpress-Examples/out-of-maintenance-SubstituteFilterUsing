@@ -34,8 +34,8 @@ In the sample, the Title filed contains null and string.Empty values. Both value
 <!-- default file list -->
 Files to look at:
 
-* [Default.aspx](./CS/SubstituteFilterUsing/Default.aspx) (VB: [Default.aspx](./VB/SubstituteFilterUsing/Default.aspx))
-* [Default.aspx.cs](./CS/SubstituteFilterUsing/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/SubstituteFilterUsing/Default.aspx.vb))
+* [Default.aspx](./CS/WebApplication1/Default.aspx) (VB: [Default.aspx](./VB/WebApplication1/Default.aspx))
+* [Default.aspx.cs](./CS/WebApplication1/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebApplication1/Default.aspx.vb))
 <!-- default file list end -->
 
 
