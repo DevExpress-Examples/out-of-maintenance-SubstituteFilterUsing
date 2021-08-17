@@ -1,4 +1,7 @@
 # GridView for WebForms - How to change the "Equals to Null" condition to "Equals to Null or Empty" in the GridView filter expression
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/395293296/)**
+<!-- run online end -->
 
 <p>GridView FilterBuilder offers the Equals operator. When an end-user selects this operator for the string column and assigns nothing to the right operand, only values that are equal to null are displayed. </p> 
 <p>If you need to display values that are equal to null or empty string, you can handle the <a href="https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.SubstituteFilter">ASPxGridView.SubstitureFilter</a> event and change the "Equals to Null" condition to the "Equals to Null or Empty" condition. </p>
